@@ -1,0 +1,16 @@
+let p1 = prompt('Введите ваше имя ','Имя'); 
+let p2 = prompt('Введите ваше имя ','Имя'); 
+let pt1 = prompt('твой ход ','камень, ножницы, бумага'); 
+let pt2 = prompt('твой ход ','камень, ножницы, бумага'); 
+ 
+let list = [];
+list.push(pt1);
+list.push(pt2);
+
+switch (list) { 
+    case ["камень","бумага"]: 
+      alert('победил(а) ' + p1); 
+      break;
+    default:
+      alert('Ничья');
+}
